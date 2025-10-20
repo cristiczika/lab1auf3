@@ -66,4 +66,18 @@ public class NumberArrayUtils {
         return removeZeros(result);
     }
 
+    public static int[] divide(int[] a, int digit) {
+        int n = a.length;
+        int[] result = new int[n];
+        int remainder = 0;
+
+        for (int i = 0; i < n; i++) {
+            int cur = remainder * 10 + a[i];
+            result[i] = cur / digit;
+            remainder = cur % digit;
+        }
+
+        return removeZeros(result);
+    }
+
 }
