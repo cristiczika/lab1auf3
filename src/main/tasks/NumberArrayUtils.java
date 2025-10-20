@@ -9,12 +9,12 @@ public class NumberArrayUtils {
             i++;
         }
 
-        int[] res = new int[array.length - i];
-        for (int j = 0; j < res.length; j++) {
-            res[j] = array[i + j];
+        int[] result = new int[array.length - i];
+        for (int j = 0; j < result.length; j++) {
+            result[j] = array[i + j];
         }
 
-        return res;
+        return result;
     }
 
     public static int[] add(int[] a, int[] b) {

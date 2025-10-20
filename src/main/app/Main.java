@@ -1,13 +1,12 @@
 package main.app;
 
 import main.tasks.NumberArrayUtils;
-
 import java.util.Arrays;
 
 public class Main {
 
     static void main() {
-        IO.println("------- Aufgabe 3 --------");
+        IO.println("\n------- Aufgabe 3 --------");
         int[] a = {1, 3, 0, 0, 0, 0, 0, 0, 0}, b = {8, 7, 0, 0, 0, 0, 0, 0, 0};
         IO.println(Arrays.toString(NumberArrayUtils.add(a, b)));
         int[] c = {8, 3, 0, 0, 0, 0, 0, 0, 0}, d = {5, 4, 0, 0, 0, 0, 0, 0, 0};
